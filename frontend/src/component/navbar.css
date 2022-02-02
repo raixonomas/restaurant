@@ -1,0 +1,37 @@
+.wrapper{
+    text-align: center;
+}
+
+.wrapper ul li{
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+li {
+    padding: 2px 5px;
+  }
+  
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+ .active {
+    background-color: #04AA6D;
+  }

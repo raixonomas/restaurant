@@ -1,18 +1,29 @@
 import React from 'react';
-import {  Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-const navbar= () =>{
+import './navbar.css'
+
+function Location(path) {
+  const location = useLocation();
+  if(location.pathname === path){
+    return { color : "#1fa2f1"}
+}
+}
+
+const navbar = ({ history }) => {
   return (
-  <div>
+  <div className='wrapper'>
+    <ul>
     <li>
-      <Link to="/">Home</Link>
+      <Link style={Location("/")} to="/">Home</Link>
     </li>
     <li>
-      <Link to="/menu">Menu</Link>
+      <Link style={Location("/menu")} to="/menu">Menu</Link>
     </li>
     <li>
-      <Link to="/about">About</Link>
+      <Link style={Location("/about")} to="/about">About</Link>
     </li>
+    </ul>
   </div>
   );
 }

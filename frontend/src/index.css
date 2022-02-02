@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("/public/images/background.jpeg");
 }
 
 code {
@@ -12,6 +13,3 @@ code {
     monospace;
 }
 
-.content{
-  margin-top: -10px;
-}

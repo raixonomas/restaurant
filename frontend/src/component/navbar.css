@@ -14,6 +14,7 @@ ul {
     background-color: #333;
     padding-top: 10px;
     padding-bottom: 10px;
+    margin-bottom: 5px;
   }
   
 li {
@@ -35,3 +36,14 @@ li a {
  .active {
     background-color: #04AA6D;
   }
+
+  .welcome{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    display: block;
+    background-color: #333;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    margin-bottom: 5px;
+}

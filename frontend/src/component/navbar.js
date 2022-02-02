@@ -21,9 +21,15 @@ const navbar = ({ history }) => {
       <Link style={Location("/menu")} to="/menu">Menu</Link>
     </li>
     <li>
+      <Link style={Location("/reservation")} to="/reservation">Reservation</Link>
+    </li>
+    <li>
       <Link style={Location("/about")} to="/about">About</Link>
     </li>
     </ul>
+    <div className="welcome" style={{ backgroundImage: "url(/images/steel.jpeg)" }}>
+      <h1>Chez Binou</h1>
+    </div>
   </div>
   );
 }

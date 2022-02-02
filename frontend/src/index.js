@@ -8,6 +8,7 @@ import Navbar from "./component/navbar";
 import Home from "./pages/home";
 import Menu from "./pages/menu";
 import About from "./pages/about";
+import Reservation from "./pages/reservation";
 
 class Main extends React.Component {
   render() {
@@ -21,6 +22,7 @@ class Main extends React.Component {
           <Route path='/' exact element={<Home />} />
           <Route path='/menu' element={<Menu />} />
           <Route path='/about' element={<About />} />
+          <Route path="/reservation" element={<Reservation />} />
         </Routes>
         </div>
       </Router>

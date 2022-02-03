@@ -26,9 +26,9 @@ class Main extends React.Component {
           <Route path="/reservation" element={<Reservation />} />
         </Routes>
         </div>
-        {/* <div className="footer">
+        <div className="footer">
           <Footer />
-        </div> */}
+        </div> 
       </Router>
     )
   }

@@ -1,0 +1,15 @@
+.menu{
+    display: block;
+}
+
+.left{
+    width: 50%;
+    height: 200px;
+    background-color: red;
+}
+
+.right{
+    width: 50%;
+    height: 200px;
+    background-color: blue;
+}

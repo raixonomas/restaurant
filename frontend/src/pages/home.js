@@ -52,6 +52,14 @@ render(){
                         alt="taco"
                         onClick={() => this.setState({ foodChose : "Taco"})}/>
                 </div>
+                <div className="foodInformation">
+                    <div className="foodHeader">
+                        <p>{this.state.foodChose}</p>
+                    </div>
+                    <div className="foodInfo">
+                        <p>{this.state.foodText}</p>
+                    </div>
+                </div>
                 <div id="secondRow">
                     <img className="item image" 
                         src={findImage("homar")} 
@@ -73,15 +81,7 @@ render(){
                         alt="taco"
                         onClick={() => this.setState({ foodChose : "Tomahawk"})}/>
                 </div>              
-            </div>
-            <div className="foodInformation">
-                    <div className="foodHeader">
-                        <p>{this.state.foodChose}</p>
-                    </div>
-                    <div className="foodInfo">
-                        <p>{this.state.foodText}</p>
-                    </div>
-                </div>
+            </div>          
         </section>
         
     )

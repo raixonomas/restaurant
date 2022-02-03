@@ -50,11 +50,26 @@ transition: 1s;
 }
 
 p {
+    color: white;
+}
+
+.foodInformation{
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+}
+
+.foodInformation .foodHeader{
+    height: auto;
+    background-color: #333;
+    display: block;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;;
+    margin-bottom: -50px;
+}
+
+.foodInformation .foodInfo{
+    background-color: gray;
+    display: block;
+    height: auto;
 }
 
 

@@ -11,7 +11,8 @@ function findImage(imageName) {
 class Home extends React.Component {
     constructor(props){
         super(props);
-        this.state = {foodChose : null};
+        this.state = {foodChose : ""}
+        this.state = {foodText : ""};
     }
 
     /*handleMouseEnter = (food) => {
@@ -34,7 +35,7 @@ render(){
                     <img className="item image"
                         src={findImage("poulet")} 
                         alt="poulet"
-                        onClick={() => this.setState({ foodChose : "Poulet"})}/>
+                        onClick={() => this.setState({ foodChose : "Poulet", foodText : "Poulet fri"})}/>
                     <div className="item text">
                         <p>asdfsadfsafsdafdsfdfdsaasdfsakjagdfyioaghdrjchajwhciwehfjhqwuierhqhrlcnhwauehcfjklqwhejkrhcqwjkehcfjlashdlfbasdjfbsjladfkljawhuerhwulahefljsdanjklfasjkld</p>
                     </div>
@@ -78,7 +79,7 @@ render(){
                         <p>{this.state.foodChose}</p>
                     </div>
                     <div className="foodInfo">
-                        <p>{this.state.foodChose}</p>
+                        <p>{this.state.foodText}</p>
                     </div>
                 </div>
         </section>

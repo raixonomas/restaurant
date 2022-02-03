@@ -4,6 +4,7 @@ import './index.css';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import Navbar from "./component/navbar";
+import Footer from "./component/footer";
 
 import Home from "./pages/home";
 import Menu from "./pages/menu";
@@ -24,6 +25,9 @@ class Main extends React.Component {
           <Route path='/about' element={<About />} />
           <Route path="/reservation" element={<Reservation />} />
         </Routes>
+        </div>
+        <div className="footer">
+          <Footer />
         </div>
       </Router>
     )

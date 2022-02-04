@@ -1,15 +1,54 @@
 .menu{
-    display: block;
+    display: flex;
+    text-align:  center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    color: white;
+
 }
 
 .left{
     width: 50%;
-    height: 200px;
-    background-color: red;
+    height: 600px;
+    background-color: rgba(20, 20, 20, 0.63);
+    margin-left: 5%;
+    margin-right: 2.5%;
+    margin-top: 16px;
 }
 
 .right{
     width: 50%;
-    height: 200px;
-    background-color: blue;
+    height: 600px;
+    margin-left: 2.5%;
+    margin-right: 5%;
 }
+
+.bottom{
+    height: 48%;
+    background-color:rgba(20, 20, 20, 0.63);
+    margin-top: 16px;
+    padding-top: 0.5px;
+}
+
+.top{
+    height: 48%;
+    background-color: rgba(20, 20, 20, 0.63);
+    
+    margin-top: 16px;
+    padding-top: 0.5px;
+}
+
+.title{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+}
+
+.menu ul{
+    text-align: left;
+    margin-left: 20px;
+    font-size: x-large;
+    background-color: transparent;
+}
+

@@ -5,36 +5,39 @@
     margin-right: auto;
     margin-top: auto;
     color: white;
-
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .left{
+    overflow: auto;
     width: 50%;
-    height: 600px;
-    background-color: rgba(20, 20, 20, 0.63);
+    height: auto;
+    background-color: rgba(20, 20, 20, 0.80);
     margin-left: 5%;
     margin-right: 2.5%;
     margin-top: 16px;
+    display: inline-block;
 }
 
 .right{
     width: 50%;
-    height: 600px;
+    height: auto;
     margin-left: 2.5%;
     margin-right: 5%;
 }
 
 .bottom{
-    height: 48%;
-    background-color:rgba(20, 20, 20, 0.63);
+    overflow: auto;
+    height: auto;
+    background-color:rgba(20, 20, 20, 0.80);
     margin-top: 16px;
     padding-top: 0.5px;
 }
 
 .top{
-    height: 48%;
-    background-color: rgba(20, 20, 20, 0.63);
-    
+    overflow: auto;
+    height: auto;
+    background-color: rgba(20, 20, 20, 0.80); 
     margin-top: 16px;
     padding-top: 0.5px;
 }
@@ -51,4 +54,29 @@
     font-size: x-large;
     background-color: transparent;
 }
+
+.foodList{
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.dishName{
+    font-size: x-large;
+    margin-bottom: -10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description{
+    font-size: small;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #757575;
+}
+
+
+
+
 

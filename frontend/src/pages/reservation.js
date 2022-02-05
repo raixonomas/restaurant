@@ -1,12 +1,78 @@
 import React from "react";
+import './reservation.css'
 
+class EmailForm extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            fullname : "",
+            noTelephone : "",
+            email : "",
+            message : "",
+            date : null,
+            hour : null
+        }
+    }
 
-export default class about extends React.Component {
+    handleSubmit(event) {
+        alert('Votre parfum favori est : ' + this.state.fullname);
+        event.preventDefault();
+      }
+
+    /*handleChange(e) {
+        this.setState({
+            {e.id}
+        })
+
+    }*/
+    
     render() {
         return(
-            <div>
-                <h1>Reservation</h1>
+            <div className="emailForm">
+                <div className="personnalInformation">
+                    <div className="inputPI">
+                        <label>
+                            Nom complet:
+                            <input type={"text"} id="fullname" name="fullname" onChange={(e) => this.handleChange(e)}></input>
+                        </label>
+                    </div>
+                    <div className="inputPI">
+                        <label>
+                            Numéro de téléphone :
+                            <input type={"tel"} id="telephone" name="telephone" onChange={(e) => this.handleChange(e)}></input>
+                        </label>
+                    </div>
+                    <div className="inputPI">
+                        <label>
+                            Adresse courriel :
+                            <input type={"email"} id="email" name="email" onChange={(e) => this.handleChange(e)}></input>
+                        </label>
+                    </div>
+                </div>
+                <div className="reservationInformation">
+                    <div className="message">
+                    <label>
+                        Message:
+                        <input type={"text"} id="message" name="message" onChange={(e) => this.handleChange(e)}></input>
+                    </label>
+                    </div>
+                    <div className="date-hour">
+                    <label>
+                        Date:
+                        <input type={"date"} id="date" name="date" onChange={(e) => this.handleChange(e)}></input>
+                    </label>
+                    <label>
+                        Heure:
+                        <input type={"time"} id="hour" name="hour" onChange={(e) => this.handleChange(e)}></input>
+                    </label>
+                    </div>
+                    <div className="button">
+                        <input type={"submit"} id="sumbit" name="submit" value={"Envoyer la réservation"}></input>
+                    </div>
+                </div>   
             </div>
         )
     }
 }
+
+export default EmailForm;

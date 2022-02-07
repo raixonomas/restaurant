@@ -8,13 +8,12 @@ var nodemailer = require('nodemailer');
 
 let testAccount = await nodemailer.createTestAccount();
 
-var transporter = nodemailer.createTransport({
+/*var transporter = nodemailer.createTransport({
     service : "gmail",
     auth: {
-        user: testAccount.user,
-        pass: testAccount.pass
+        user: "",
     }
-})
+})*/
 
 class EmailForm extends React.Component {
     constructor(props){

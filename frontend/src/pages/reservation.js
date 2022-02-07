@@ -1,5 +1,20 @@
 import React from "react";
+import { experiments } from "webpack";
 import './reservation.css'
+
+experiments.email = true;
+
+var nodemailer = require('nodemailer');
+
+let testAccount = await nodemailer.createTestAccount();
+
+var transporter = nodemailer.createTransport({
+    service : "gmail",
+    auth: {
+        user: testAccount.user,
+        pass: testAccount.pass
+    }
+})
 
 class EmailForm extends React.Component {
     constructor(props){
@@ -29,9 +44,7 @@ class EmailForm extends React.Component {
         console.log()
     }*/
     
-    sendEmail() {
 
-    }
 
     render() {
         return(

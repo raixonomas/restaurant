@@ -1,14 +1,15 @@
+
 import React from "react";
 import './reservation.css';
-var nodemailer = require("nodemailer");
+/*var nodemailer = require("nodemailer");
 /*import { resolveContent } from "nodemailer/lib/shared";*/
 //module.exports = require("readable-stream");
-let testAccount = await nodemailer.createTestAccount();
+/*let testAccount = await nodemailer.createTestAccount();
 
 
 
 var transporter = nodemailer.createTransport({
-    host: "smtp.ethereal.email",
+    host: "smtp.gmail.com",
     port: 587,
     secure: false,
     auth: {
@@ -18,11 +19,11 @@ var transporter = nodemailer.createTransport({
 })
 
 var mailOptions = {
-    from: "raixonomas@gmail.com",
-    to: "raph123411@gmail.com",
+    from: "raph123411@gmail.com",
+    to: "raixonomas@g",
     subjet: "Test",
     text: "test"
-}
+}*/
 
 class EmailForm extends React.Component {
     constructor(props){
@@ -39,13 +40,13 @@ class EmailForm extends React.Component {
     }
 
     sendEmail(){
-        transporter.sendMail(mailOptions,function(error,info){
+        /*transporter.sendMail(mailOptions,function(error,info){
             if(error){
                 console.log(error);
             } else {
                 console.log("Email sent : " + info.response);
             }
-        })
+        })*/      
     }
 
     /*handleChange(e) {

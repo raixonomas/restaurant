@@ -1,19 +1,28 @@
 import React from "react";
-import { experiments } from "webpack";
-import './reservation.css'
-
-experiments.email = true;
-
-var nodemailer = require('nodemailer');
-
+import './reservation.css';
+var nodemailer = require("nodemailer");
+/*import { resolveContent } from "nodemailer/lib/shared";*/
+//module.exports = require("readable-stream");
 let testAccount = await nodemailer.createTestAccount();
 
-/*var transporter = nodemailer.createTransport({
-    service : "gmail",
+
+
+var transporter = nodemailer.createTransport({
+    host: "smtp.ethereal.email",
+    port: 587,
+    secure: false,
     auth: {
-        user: "",
+        user: testAccount.user,
+        pass: testAccount.pass
     }
-})*/
+})
+
+var mailOptions = {
+    from: "raixonomas@gmail.com",
+    to: "raph123411@gmail.com",
+    subjet: "Test",
+    text: "test"
+}
 
 class EmailForm extends React.Component {
     constructor(props){
@@ -29,10 +38,15 @@ class EmailForm extends React.Component {
         }
     }
 
-    handleSubmit(event) {
-        alert('Votre parfum favori est : ' + this.state.fullname);
-        event.preventDefault();
-      }
+    sendEmail(){
+        transporter.sendMail(mailOptions,function(error,info){
+            if(error){
+                console.log(error);
+            } else {
+                console.log("Email sent : " + info.response);
+            }
+        })
+    }
 
     /*handleChange(e) {
         const value = e.value
